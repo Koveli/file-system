@@ -13,7 +13,13 @@ class FileSystem
     {
         $this->path  =  $path;
     }
-
+    
+    /**
+     * create
+     *
+     * @param  Publication $publication
+     * @return string
+     */
     public function create(Publication $publication): string
     {
 
@@ -23,7 +29,13 @@ class FileSystem
 
         return $filename;
     }
-
+    
+    /**
+     * find
+     *
+     * @param  mixed $filename
+     * @return Publication
+     */
     public function find(string $filename): Publication
     {
         $file  = $this->path . "/" . $filename;
@@ -42,7 +54,13 @@ class FileSystem
 
         return $publication;
     }
-
+    
+    /**
+     * exists
+     *
+     * @param  mixed $filename
+     * @return bool
+     */
     public function exists(string $filename): bool
     {
         $file  = $this->path . "/" . $filename;
