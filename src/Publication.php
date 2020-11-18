@@ -42,7 +42,7 @@ class Publication implements JsonSerializable
      * @param  mixed $date
      * @return Publication
      */
-    public function setPublishedDate(int $date): Publication
+    public function setPublishedDate(string $date): Publication
     {
         $this->date = $date;
         return $this;
@@ -83,9 +83,9 @@ class Publication implements JsonSerializable
     /**
      * getPublishedDate
      *
-     * @return int
+     * @return string
      */
-    public function getPublishedDate(): int
+    public function getPublishedDate(): string
     {
         return $this->date;
     }
