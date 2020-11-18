@@ -1,0 +1,18 @@
+{
+    "name": "hilafothi/file-system",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed jinas",
+            "email": "j@live.mv"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4": {
+            "Hilafothi\\FileSystem\\": "src/"
+        }
+    },
+    "require-dev": {
+    }
+}
