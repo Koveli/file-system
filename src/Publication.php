@@ -12,50 +12,99 @@ class Publication implements JsonSerializable
     protected $content;
 
 
-    public function setTitle(string $title)
+    /**
+     * setTitle
+     *
+     * @param  mixed $title
+     * @return Publication
+     */
+    public function setTitle(string $title): Publication
     {
         $this->title = $title;
         return $this;
     }
 
-    public function setAuthor(string $author)
+    /**
+     * setAuthor
+     *
+     * @param  mixed $author
+     * @return Publication
+     */
+    public function setAuthor(string $author): Publication
     {
         $this->author = $author;
         return $this;
     }
 
-    public function setPublishedDate(int $date)
+    /**
+     * setPublishedDate
+     *
+     * @param  mixed $date
+     * @return Publication
+     */
+    public function setPublishedDate(int $date): Publication
     {
         $this->date = $date;
         return $this;
     }
 
-    public function setContent(string $content)
+    /**
+     * setContent
+     *
+     * @param  mixed $content
+     * @return Publication
+     */
+    public function setContent(string $content): Publication
     {
         $this->content = $content;
         return $this;
     }
 
-    public function getTitle()
+    /**
+     * getTitle
+     *
+     * @return string
+     */
+    public function getTitle(): string
     {
         return $this->title;
     }
 
-    public function getAuthor()
+    /**
+     * getAuthor
+     *
+     * @return string
+     */
+    public function getAuthor(): string
     {
         return $this->author;
     }
 
-    public function getPublishedDate()
+    /**
+     * getPublishedDate
+     *
+     * @return int
+     */
+    public function getPublishedDate(): int
     {
         return $this->date;
     }
 
-    public function getContent()
+    /**
+     * getContent
+     *
+     * @return string
+     */
+    public function getContent(): string
     {
         return $this->content;
     }
 
+    /**
+     * jsonSerialize
+     *
+     * @return void
+     */
     public function jsonSerialize()
     {
         return
